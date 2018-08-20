@@ -1,6 +1,7 @@
 <?php
 if(isset($_COOKIE['username'])){
-	echo"Bem-Vindo, $_COOKIE['username'] <br>";
+	$var = $_COOKIE['username'];
+	echo"Bem-Vindo, $var <br>";
 	echo"Essas informações <font color='red'>PODEM</font> ser acessadas por você";
 }else{
 	echo"Bem-Vindo, convidado <br>";
